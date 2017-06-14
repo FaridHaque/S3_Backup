@@ -41,11 +41,11 @@ test access with supplied credentials? [Y/n] Y
 
 Success. Your access key and secret key worked fine :-)
 
-# ep 4 save configuration
+# Step 4 save configuration
 Save settings? [y/N] Y
 Configuration saved to '/root/.s3cfg'
 
-# ep 5 download and edit the script
+# Step 5 download and edit the script
 
 wget https://dl.dropboxusercontent.com/u/75125577/sync/scripts/s3_upload.sh
 
