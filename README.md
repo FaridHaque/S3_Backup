@@ -61,11 +61,13 @@ vi /root/scripts/s3_upload.sh
 
 dirstobackup=(
 '/var/www/webroot/'
+
 'Any other directory includes in quotes with full path'
 )
 
 dbstobackup=(
 'mysql'
+
 'To add more include name in quotes'
 )
 
