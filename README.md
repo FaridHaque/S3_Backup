@@ -6,11 +6,17 @@ apt-get install --assume-yes --force-yes python-setuptools makepasswd
 # Step 2 downloads and installs S3cmd 
 
 cd /root/
+
 wget -q https://github.com/s3tools/s3cmd/archive/master.zip
+
 unzip -qq master.zip
+
 cd /root/s3cmd-master
+
 python setup.py install
+
 cd /root/scripts/
+
 rm -rf /root/s3cmd-master && rm -rf /root/master.zip
 
 # Step 3 Configure S3cmd
@@ -32,12 +38,15 @@ Configuration saved to '/root/.s3cfg'
 
 # ep 5 download and edit the script
 
-wget https://dl.dropboxusercontent.com/u/75125577/sync/scripts/s3_upload.sh 
+wget https://dl.dropboxusercontent.com/u/75125577/sync/scripts/s3_upload.sh
+
 After download the script run the following commands.
+
 chmod +x s3_upload.sh
 
 # Step 6
 Open the script edit the following
+
 vi /root/scripts/s3_upload.sh
 
 
@@ -52,10 +61,12 @@ dbstobackup=(
 )
 
 # Step 7 create tmp backup directory
+
 Create the following directory before running the script
+
 mkdir /home/backups && mkdir -p /home/status/
 
-Step 8 setup the cron to run daily.
+# Step 8 setup the cron to run daily.
 
 Enable Cron to run daily on off peak hours
 
