@@ -82,6 +82,7 @@ mkdir /home/backups && mkdir -p /home/status/
 Enable Cron to run daily on off peak hours
 
 #S3 Backup
+
 0 3 * * *       /root/scripts/s3_upload.sh >/dev/null 2>&1
 
 
